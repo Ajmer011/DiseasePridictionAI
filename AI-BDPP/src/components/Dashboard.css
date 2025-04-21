@@ -1,0 +1,173 @@
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right top, #a8edea, #fed6e3);
+  }
+  
+  .dashboard-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in;
+    width: 1270px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 105, 92, 0.9);
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffd54f;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: popIn 0.7s ease-out;
+  }
+  
+  @keyframes popIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .card h1 {
+    font-size: 2rem;
+    color: #00695c;
+  }
+  
+  .subheading {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .health-score {
+    margin-top: 1.5rem;
+  }
+  
+  .score-bar {
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  
+  .score-bar .fill {
+    height: 100%;
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    animation: pulseBar 2s infinite ease-in-out;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  @keyframes pulseBar {
+    0%, 100% { opacity: 0.9; }
+    50% { opacity: 1; }
+  }
+  
+  .status {
+    font-weight: bold;
+    color: #2e7d32;
+    margin-top: 5px;
+  }
+  
+  .recent {
+    margin-top: 2rem;
+  }
+  
+  .pills {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .pill {
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .pill:hover {
+    transform: scale(1.1);
+  }
+  
+  .pill.normal {
+    background: #4caf50;
+  }
+  
+  .pill.high {
+    background: #e53935;
+  }
+  
+  .pill.low {
+    background: #fb8c00;
+  }
+  
+  .action-btn {
+    margin-top: 2.5rem;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .action-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background: #004d40;
+    color: white;
+    font-size: 0.9rem;
+  }
+  

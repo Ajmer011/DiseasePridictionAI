@@ -1,0 +1,106 @@
+.model-info-container {
+    padding: 3rem 2rem;
+    max-width: 1250px;
+    margin: auto;
+    background: #f7f9fc;
+    min-height: 100vh;
+  }
+  
+  .model-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+  }
+  
+  .explanation-card {
+    background: #cbc4c4;
+    color: black;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .explanation-card h2 {
+    color: #34495e;
+    margin-bottom: 0.5rem;
+  }
+  
+  .features-section {
+    margin-bottom: 2rem;
+    color: #120303;
+  }
+  
+  .features-section h2 {
+    color: #34495e;
+    margin-bottom: 1rem;
+  }
+  
+  .features-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .features-section li {
+    background: #cbc4c4;
+    color: black;
+    margin: 0.5rem 0;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .features-section li:hover {
+    background: #d0d3d4;
+  }
+  
+  .confidence-score {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+  }
+  
+  .score-bar {
+    background: #cbc4c4;
+    color: black;
+    height: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0.8rem 0;
+  }
+  
+  .score-fill {
+    background: linear-gradient(to right, #00c9ff, #92fe9d);
+    height: 100%;
+    color: #120303;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .external-links {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .link-button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    background: #34495e;
+    color: #130303;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .link-button:hover {
+    background: #2c3e50;
+  }
+  .Head {
+    color: #120303;
+  }

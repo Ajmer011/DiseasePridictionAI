@@ -1,0 +1,131 @@
+/* WelcomePage.css */
+
+/* Page Wrapper: Fullscreen Centered */
+.page-wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #67a4d6;
+    animation: bgPulse 10s infinite alternate ease-in-out;
+    color: #ffffff;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  /* Animated Background Pulse */
+  @keyframes bgPulse {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Title Animation */
+  .page-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 1s ease-out forwards;
+  }
+  
+  /* Description Text */
+  .page-intro {
+    font-size: 1.25rem;
+    max-width: 750px;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+    color: #e0e7ff;
+    opacity: 0.95;
+    animation: fadeInUp 1.2s ease-out forwards;
+  }
+  
+  /* Buttons Container */
+  .action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  
+  /* Base Button Style */
+  button {
+    padding: 0.85rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1);
+  }
+  
+  /* Primary Button (Get Started) */
+  .btn-primary {
+    background-color: #ffffff;
+    color: #4f46e5;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e0e7ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #c7d2fe;
+  }
+  
+  /* Secondary Button (Login) */
+  .btn-secondary {
+    background-color: #6366f1;
+    color: #ffffff;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #818cf8;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #a5b4fc;
+  }
+  
+  /* Outline Button (Learn More) */
+  .btn-outline {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+  }
+  
+  .btn-outline:hover {
+    background-color: #ffffff;
+    color: #9333ea;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #f3e8ff;
+  }
+  
+  /* Entry Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
