@@ -1,131 +1,208 @@
-/* WelcomePage.css */
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Page Wrapper: Fullscreen Centered */
-.page-wrapper {
-    width: 100vw;
-    height: 100vh;
-    padding: 2rem;
-    display: flex;
+body, html {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+  width: 1270px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Top Bar */
+.top-barA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c2c2c;
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 14px;
+  flex-wrap: wrap;
+  width: 1270px;
+}
+
+.social-iconsA svg {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-iconsA svg:hover {
+  transform: scale(1.2);
+  color: #292727;
+}
+
+.contact-infoA {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-infoA div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quote-btnA {
+  background: #86f08e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.quote-btnA:hover {
+  background: white;
+  color: #f15a29;
+  border: 1px solid #f15a29;
+}
+
+/* Navbar */
+.navbarA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #63cce6;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logoA {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-linksA a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-linksA a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.nav-linksA a:hover {
+  color: #fff;
+}
+
+.nav-linksA a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-sectionA {
+  background: url('https://intellidynamics.net/wp-content/uploads/2024/02/1706492703600-768x390.png') no-repeat center center/cover;
+  height: 92vh;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlayA {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 4rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 720px;
+  animation: fadeInUpA 1s ease;
+}
+
+.hero-overlayA h1 {
+  font-size: 52px;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-overlayA p {
+  font-size: 16px;
+  margin-bottom: 2rem;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.get-started-btnA {
+  padding: 0.9rem 2rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.get-started-btnA:hover {
+  background-color: #fff;
+  color: #f15a29;
+}
+
+/* Animation */
+@keyframes fadeInUpA {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-linksA {
+    display: none;
+  }
+
+  .top-barA {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #67a4d6;
-    animation: bgPulse 10s infinite alternate ease-in-out;
-    color: #ffffff;
-    overflow: hidden;
-    text-align: center;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
-  
-  /* Animated Background Pulse */
-  @keyframes bgPulse {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
+
+  .contact-infoA {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
-  
-  /* Title Animation */
-  .page-title {
-    font-size: 3.5rem;
-    font-weight: 900;
-    margin-bottom: 1.2rem;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    animation: fadeInDown 1s ease-out forwards;
+
+  .hero-overlayA h1 {
+    font-size: 32px;
   }
-  
-  /* Description Text */
-  .page-intro {
-    font-size: 1.25rem;
-    max-width: 750px;
-    margin-bottom: 2.5rem;
-    line-height: 1.7;
-    color: #e0e7ff;
-    opacity: 0.95;
-    animation: fadeInUp 1.2s ease-out forwards;
+
+  .hero-overlayA {
+    padding: 2rem 1.5rem;
   }
-  
-  /* Buttons Container */
-  .action-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-    animation: fadeInUp 1.5s ease-out forwards;
-  }
-  
-  /* Base Button Style */
-  button {
-    padding: 0.85rem 2rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 2rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transform: scale(1);
-  }
-  
-  /* Primary Button (Get Started) */
-  .btn-primary {
-    background-color: #ffffff;
-    color: #4f46e5;
-  }
-  
-  .btn-primary:hover {
-    background-color: #e0e7ff;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #c7d2fe;
-  }
-  
-  /* Secondary Button (Login) */
-  .btn-secondary {
-    background-color: #6366f1;
-    color: #ffffff;
-  }
-  
-  .btn-secondary:hover {
-    background-color: #818cf8;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #a5b4fc;
-  }
-  
-  /* Outline Button (Learn More) */
-  .btn-outline {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-  }
-  
-  .btn-outline:hover {
-    background-color: #ffffff;
-    color: #9333ea;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #f3e8ff;
-  }
-  
-  /* Entry Animations */
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}

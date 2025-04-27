@@ -14,7 +14,7 @@
   }
   
   .explanation-card {
-    background: #cbc4c4;
+    background: linear-gradient(135deg, #75b9d9, #c9edf7);
     color: black;
     padding: 2rem;
     border-radius: 15px;
@@ -43,7 +43,7 @@
   }
   
   .features-section li {
-    background: #cbc4c4;
+    background: linear-gradient(135deg, #75b9d9, #c9edf7);
     color: black;
     margin: 0.5rem 0;
     padding: 0.8rem 1rem;
@@ -52,7 +52,7 @@
   }
   
   .features-section li:hover {
-    background: #d0d3d4;
+    background: #f3f4f5;
   }
   
   .confidence-score {

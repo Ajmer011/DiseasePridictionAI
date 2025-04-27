@@ -1,50 +1,42 @@
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './LandingPage.css';
+import { Link } from 'react-router-dom';
+import { FaPhoneAlt, FaHome, FaFacebook, FaTwitter, FaLinkedin, FaSkype } from 'react-icons/fa';
 
-export default function WelcomePage() {
-  const title = (
-    <motion.h1
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      className="page-title"
-    >
-      Welcome to HealthPredict AI
-    </motion.h1>
-  );
+export default function LandingPage() {
+  return (
+    <div className="page-wrapperA">
+      {/* Top Bar */}
+      <div className="top-barA">
+        <div className="social-iconsA">
+          <FaFacebook /><FaTwitter /><FaLinkedin /><FaSkype />
+        </div>
+        <div className="contact-infoA">
+          <div><FaPhoneAlt />+91 95169-91004</div>
+          <div><FaHome /> Your address goes here</div>
+          <Link to="/login"> <button className="quote-btnA">Log-In</button></Link>
+        </div>
+      </div>
 
-  const description = (
-    <motion.p
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.5, duration: 1 }}
-      className="page-intro"
-    >
-      Use artificial intelligence to predict diseases early by analyzing your lifestyle and medical history.
-    </motion.p>
-  );
+      {/* Navbar */}
+      <nav className="navbarA">
+        <div className="logoA">AI-Prediction</div>
+        <div className="nav-linksA">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Service ▾</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
 
-  const buttons = (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ delay: 1, duration: 0.5 }}
-      className="action-buttons"
-    >
-      <Link to="/main"><button className="btn-primary">Get Started</button></Link>
-      <Link to="/login"><button className="btn-secondary">Login</button></Link>
-      <button className="btn-outline">Learn More</button>
-    </motion.div>
-  );
-
-  const container = (
-    <div className="page-wrapper">
-      {title}
-      {description}
-      {buttons}
+      {/* Hero Section */}
+      <div className="hero-sectionA">
+        <div className="hero-overlayA">
+          <h1>AI-Prediction with the help of<br />Machine Learning</h1>
+          <p>The disease might hide the person underneath, but there's still a person in there who needs your love and attention.</p>
+          <Link to="/main"><button className="get-started-btnA">Get Start</button></Link>
+        </div>
+      </div>
     </div>
   );
-
-  return container;
 }

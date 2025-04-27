@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 25px;
+    width: 95%;
+    max-width: 1200px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    animation: slideFade 1.2s ease;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #185a9d;
+    background: linear-gradient(45deg, #43cea2, #185a9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  
+  .form-group label {
+    font-weight: 700;
+    color: #333;
+  }
+  
+  input, select {
+    padding: 0.8rem;
+    border: 2px solid #43cea2;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  input:focus, select:focus {
+    border-color: #185a9d;
+    box-shadow: 0 0 10px #43cea2;
+  }
+  
+  .submit-btn {
+    grid-column: 1/-1;
+    padding: 1rem;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  
+  .submit-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #185a9d, #43cea2);
+  }
+  
+  @keyframes slideFade {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

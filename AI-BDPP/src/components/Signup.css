@@ -1,0 +1,156 @@
+/* General Layout */
+.registration-container2 {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: linear-gradient(135deg, #dcd5d3, #f1ece9);
+    margin-top: 170px;
+  }
+  
+  .registration-box2 {
+    background: linear-gradient(135deg, #6e7dff, #4ecdc4);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .registration-box2:hover {
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #ebe5e5;
+    margin-bottom: 30px;
+  }
+  
+  /* Input Fields */
+  .input-container2 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .input-container2 .icon2 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f4ecec;
+    font-size: 18px;
+  }
+  
+  .input-container2 input {
+    width: 100%;
+    padding: 12px 10px 12px 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    color: hsl(0, 17%, 88%);
+  }
+  
+  .input-container2 select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  /* Password Toggle */
+  .password-toggle2 {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Register Button */
+  .register-btn2 {
+    background-color: #ff7e5f;
+    color: #fff;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-btn2:hover {
+    background-color: #feb47b;
+  }
+  
+  /* Social Buttons */
+  .social-btns2 {
+    margin-top: 20px;
+  }
+  
+  .social-btn2 {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #555;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-btn2:hover {
+    background-color: #ff7e5f;
+    color: #fff;
+  }
+  
+  .social-btn2.google:hover {
+    background-color: #db4437;
+  }
+  
+  .social-btn2.facebook:hover {
+    background-color: #3b5998;
+  }
+  
+  .social-btn2.github:hover {
+    background-color: #333;
+  }
+  
+  /* Login Link */
+  .login-text2 {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  .login-text2 a {
+    color: #ff7e5f;
+    text-decoration: none;
+  }
+  
+  .login-text2 a:hover {
+    text-decoration: underline;
+  }
+  

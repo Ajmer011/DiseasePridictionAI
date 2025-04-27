@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-
 import './PersonalInfo.css';
 
 const steps = [
@@ -53,23 +52,23 @@ const MultiStepForm = () => {
   const healthScore = calculateHealthScore();
 
   return (
-    <div className="multi-step-forms">
+    <div className="multi-step-forms11">
       <motion.h2
         key={step}
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 50, opacity: 0 }}
         transition={{ duration: 0.5 }}
-        className="step-title"
+        className="step-title11"
       >
         {steps[step]}
       </motion.h2>
 
-      <div className="stepper">
+      <div className="stepper11">
         {steps.map((s, i) => (
           <div
             key={i}
-            className={`step ${i === step ? 'active' : i < step ? 'completed' : ''}`}
+            className={`step11 ${i === step ? 'active11' : i < step ? 'completed11' : ''}`}
           >
             {s}
           </div>
@@ -83,7 +82,7 @@ const MultiStepForm = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.4 }}
-          className="step-content"
+          className="step-content11"
         >
           {step === 0 && (
             <>
@@ -135,10 +134,10 @@ const MultiStepForm = () => {
         </motion.div>
       </AnimatePresence>
 
-      <motion.div className="health-score" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      <motion.div className="health-score11" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <p>Live Health Score:</p>
         <motion.div
-          className="score-bar"
+          className="score-bar11"
           initial={{ width: 0 }}
           animate={{ width: `${healthScore}%` }}
           transition={{ duration: 0.8 }}
@@ -147,7 +146,7 @@ const MultiStepForm = () => {
         </motion.div>
       </motion.div>
 
-      <div className="buttons">
+      <div className="buttons11">
         {step > 0 && <button onClick={handlePrev}>Back</button>}
         {step < steps.length - 1 ? <button onClick={handleNext}>Next</button> : <button onClick={() => alert('Form submitted!')}>Submit</button>}
       </div>

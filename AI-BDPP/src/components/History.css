@@ -6,7 +6,7 @@
     justify-content: flex-start;
     width: 1270px;
     height: 100vh;
-    background-color: #f1f3f4; /* Soft background color */
+    background: linear-gradient(135deg, #75b9d9, #c9edf7); /* Soft background color */
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto; /* Allow vertical scrolling */

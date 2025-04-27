@@ -1,0 +1,149 @@
+/* Feedback Container */
+.feedback-container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #6e7dff, #4ecdc4);
+    min-height: 100vh;
+    color: rgb(16, 9, 9);
+    position: relative;
+    width: 1270px;
+  }
+  
+  /* Heading */
+  .feedback-heading4 {
+    font-size: 36px;
+    color: #3a3030;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .feedback-description4 {
+    font-size: 18px;
+    text-align: center;
+    color: #0e0909;
+    margin-bottom: 20px;
+    max-width: 600px;
+  }
+  
+  /* Back Button */
+  .back-button4 {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .back-button4:hover {
+    transform: translateY(-3px);
+  }
+  
+  .back-button4:active {
+    transform: translateY(3px);
+  }
+  
+  /* Feedback Form */
+  .feedback-form4 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .input-group4 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-label4 {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #0e0909;
+  }
+  
+  .input-field4 {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    background: #fff;
+    color: #333;
+  }
+  
+  .submit-button4 {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .submit-button4:hover {
+    transform: translateY(-3px);
+  }
+  
+  .submit-button4:active {
+    transform: translateY(3px);
+  }
+  
+  /* Thank You Message */
+  .thank-you-message4 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+    animation: fadeIn4 1s ease-out;
+  }
+  
+  /* Info Section */
+  .feedback-info4 {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .info-heading4 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  
+  .info-text4 {
+    font-size: 16px;
+    color: #f1f1f1;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes fadeIn4 {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

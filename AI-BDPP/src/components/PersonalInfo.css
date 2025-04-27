@@ -16,7 +16,7 @@ body {
   color: #333;
 }
 
-.multi-step-forms {
+.multi-step-forms11 {
   background-color: white;
   width: 100%;
   max-width: 700px;
@@ -24,10 +24,10 @@ body {
   border-radius: 15px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   position: relative;
-  margin-left: 350px;
+  margin-left: 0px;
 }
 
-.step-title {
+.step-title11 {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 30px;
@@ -35,7 +35,7 @@ body {
   text-align: center;
 }
 
-.stepper {
+.stepper11 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -43,23 +43,23 @@ body {
   text-align: center;
 }
 
-.step {
+.step11 {
   width: 23%;
   padding: 5px;
   color: #888;
   cursor: pointer;
 }
 
-.step.active {
+.step11.active11 {
   color: #007bff;
   font-weight: bold;
 }
 
-.step.completed {
+.step11.completed11 {
   color: #28a745;
 }
 
-.step-content {
+.step-content11 {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -104,18 +104,18 @@ button:disabled {
   cursor: not-allowed;
 }
 
-.buttons {
+.buttons11 {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.health-score {
+.health-score11 {
   margin-top: 30px;
   text-align: center;
 }
 
-.score-bar {
+.score-bar11 {
   background-color: #28a745;
   height: 20px;
   border-radius: 10px;
@@ -123,7 +123,7 @@ button:disabled {
   transition: width 0.8s ease;
 }
 
-.back-button {
+.back-button11 {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -136,23 +136,23 @@ button:disabled {
   transition: background-color 0.3s ease;
 }
 
-.back-button:hover {
+.back-button11:hover {
   background-color: #e9ecef;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
-  .multi-step-forms {
+  .multi-step-forms11 {
     width: 90%;
     padding: 20px;
   }
 
-  .stepper {
+  .stepper11 {
     flex-direction: column;
     gap: 10px;
   }
 
-  .step {
+  .step11 {
     width: 100%;
   }
 }
